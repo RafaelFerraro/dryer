@@ -10,6 +10,12 @@ class CreateUser
 
   step :validate, with: "validate"
   step :create, with: "create"
+
+  def create(input)
+    p "Preparing to create a user with these input values = #{input}"
+
+    super(input)
+  end
 end
 
 # success call
